@@ -14,6 +14,7 @@
         @clouseForm="isFormActive=!isFormActive"
     />
     <p class="empty-cart">{{ this.CART.length ? '' : 'No product in carr...' }}</p>
+    <h1 class="text-center">Total: {{cartTotalCost}}</h1>
     <CartItem
         v-for="(item,index) in CART"
         :key="item.id"
